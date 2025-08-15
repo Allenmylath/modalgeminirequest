@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Modal app definition
-app = modal.App("property-image-processor-openai")
+app = modal.App("property-image-processor")
 
 # Define the Modal image with all required dependencies
 image = modal.Image.debian_slim().pip_install(
